@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.container{
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+    padding: 100px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 14px 25px 10px rgb(140, 140, 140);
+}
+/*.brand-logo{
+    background: url("D:\\html\\images\\user_icon.jpg");
+    display:inline-block;
+    height:474px;
+    width:474px;
+    border-radius: 50%;
+}*/
+.brand-title{
+    color:rgb(9,146,244);
+}
+.inputs{
+    text-align: left;
+    margin-top: 10px;
+}
+input,label,button{
+    display: block;
+    width: 100%;
+}
+label{
+    color:rgb(9,146,244);
+    margin-bottom: 5px;
+}
+label:nth-last-of-type(2){
+    margin-top: 20px;
+}
+input{
+    background-color: white;
+    padding:10px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 5px 5px  rgb(140, 140, 140);
+}
+button{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:rgb(9,146,244);
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 5px 5px rgb(140, 140, 140);
+    cursor: pointer;
+}
