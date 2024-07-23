@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Forms</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <style>
+        body{
+            margin:0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: aliceblue;
+            height: 600px;
+            width: 600px;
+            padding: 50px;
+            padding-left: 75px;
+            padding-right: 75px;
+            padding-bottom: 75px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            box-shadow: 14px 25px 10px rgb(140, 140, 140);
+        }
+        .brand-title{
+            color:rgb(9,146,244);
+            font-size: larger;
+            margin-bottom: 20px;
+        }
+        .inputs{
+        text-align: left;
+        margin-top: 10px;
+        }
+        input{
+            background-color: white;
+            padding:10px;
+        }
+        input:hover,select:hover{
+            box-shadow: 4px 5px 5px  rgb(140, 140, 140);
+        }
+        label{
+            color:rgb(9,146,244);
+            margin-bottom: 5px;
+        }
+        h4{
+            text-align: center;
+        }
+        .error {
+            color: red;
+            font-size: 0.875em;
+        }
+    </style>
+    <script>
+        function formValidation() {
+            var firstname = document.getElementById("firstname").value;
+            var lastname = document.getElementById("lastname").value;
+            var emailid = document.getElementById("emailid").value;
+            var password = document.getElementById("password").value;
+            var genderMale = document.getElementById("genderMale").checked;
+            var genderFemale = document.getElementById("genderFemale").checked;
+            var country = document.getElementById("country").value;
+
+            var isValid = true;
+
+            if (firstname == "" || firstname == null) {
+                document.getElementById("usr1Error").innerHTML = "Please enter First Name";
+                isValid = false;
+            } else {
+                document.getElementById("usr1Error").innerHTML = "";
+            }
+
+            if (lastname == "" || lastname == null) {
+                document.getElementById("usr2Error").innerHTML = "Please enter Last Name";
+                isValid = false;
+            } else {
+                document.getElementById("usr2Error").innerHTML = "";
+            }
+
+            if (emailid == "" || emailid == null){
+                document.getElementById("emailError").innerHTML = "Please enter Email Id";
+            }else {
+                document.getElementById("emailError").innerHTML = "";
+            }
+            if (password == "" || password.length < 6 || password.length > 32) {
+                document.getElementById("passError").innerHTML = "Please enter a valid password (6-32 characters)";
+                isValid = false;
+            } else {
+                document.getElementById("passError").innerHTML = "";
+            }
+
+            if (!genderMale && !genderFemale) {
+                document.getElementById("genderError").innerHTML = "Please select your gender";
+                isValid = false;
+            } else {
+                document.getElementById("genderError").innerHTML = "";
+            }
+
+            if (country == "") {
+                document.getElementById("countryError").innerHTML = "Please select your country";
+                isValid = false;
+            } else {
+                document.getElementById("countryError").innerHTML = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="brand-title">Registration Form</div>
+        <form name="register_form" method="post" action="" class="forms" onsubmit="return formValidation()">
+            <div class="inputs">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="firstname" class="form-label">First Name</label>
+                            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="abc">
+                            <div id="usr1Error" class="error"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="def">
+                            <div id="usr2Error" class="error"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label for="emailid" class="form-label">Email</label>
+                <input type="email" id="emailid" name="emailid"class="form-control" placeholder="abc@gmail.com">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="min 6 char needed">
+                <div id="passError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="genderMale" name="gender" value="male" class="form-check-input">
+                    <label for="genderMale" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="genderFemale" name="gender" value="female" class="form-check-input">
+                    <label for="genderFemale" class="form-check-label">Female</label>
+                </div>
+                <div id="genderError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="country" class="form-label">Country</label>
+                <select id="country" name="cntry" class="form-control">
+                    <option value="">Select your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Australia">Australia</option>
+                </select>
+                <div id="countryError" class="error"></div>
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+            </form>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
