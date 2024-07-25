@@ -1,0 +1,42 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+.container{
+    max-width: 600px;
+    background-color: rgb(240, 236, 236);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+h1{
+    text-align: center;
+}
+input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-right: 10px;
+}
+button{
+    background-color: rgb(8, 182, 8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#todo-list{
+    list-style-type: none;
+}
+#todo-list li{
+    display: flex;
+    justify-content: space-between;
+}
+.delete-btn{
+    background-color: orange;
+    margin-top: 5px;
+}
