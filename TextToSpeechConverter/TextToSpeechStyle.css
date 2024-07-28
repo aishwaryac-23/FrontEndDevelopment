@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M202.51 65.39a20.7 20.7 0 1 0 24.66-33.26z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1137.56 538.34 a46.54 46.54 0 1 0 93.08 0 a46.54 46.54 0 1 0 -93.08 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1211.03 84.42L1244.65 84.42L1244.65 98.81L1211.03 98.81z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1388.81 182.56a38.31 38.31 0 1 0-76.45-5.07z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1298 289.33L1351.44 289.33L1351.44 308.21L1298 308.21z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1353.13 133.32L1406.42 133.32L1406.42 160.17L1353.13 160.17z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M895.59 0.92L932.63 0.92L932.63 28.44L895.59 28.44z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M34.94 123.06a0.36 0.36 0 1 0-0.14-0.71z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M144.51 261.77L166.24 261.77L166.24 283.5L144.51 283.5z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M189.78 80.85 a0.33 0.33 0 1 0 0.66 0 a0.33 0.33 0 1 0 -0.66 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1394.4 79.76a18.33 18.33 0 1 0 31.33 19.04z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M316.43 164.57L351.82 164.57L351.82 213.98L316.43 213.98z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1046.16 547.59a44.66 44.66 0 1 0 3.6-89.25z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M970.22-7a25.01 25.01 0 1 0 47.55 15.52z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M568.47 75.12L617.34 75.12L617.34 123.99L568.47 123.99z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M580.67 392.82a4.32 4.32 0 1 0 5.23 6.88z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M339.45 318.73L348.27 318.73L348.27 363.4L339.45 363.4z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1115.36 75.93L1138.95 75.93L1138.95 99.52L1115.36 99.52z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M975.15 186.69 a53.59 53.59 0 1 0 107.18 0 a53.59 53.59 0 1 0 -107.18 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M828.84 135.77L860.34 135.77L860.34 167.27L828.84 167.27z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1351.47 196.02L1357.77 196.02L1357.77 210.27L1351.47 210.27z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M515.46 358.98 a12.85 12.85 0 1 0 25.7 0 a12.85 12.85 0 1 0 -25.7 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1395.17 117.83a45.12 45.12 0 1 0-49.77 75.28z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M518.76 158.53L565.75 158.53L565.75 205.52L518.76 205.52z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M759.76 359.69L784.63 359.69L784.63 384.56L759.76 384.56z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M308.08 493.13a17.3 17.3 0 1 0-22.1 26.62z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1358.85 161.49L1378.93 161.49L1378.93 172.95L1358.85 172.95z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1236.97 509.85a53.94 53.94 0 1 0-24.35-105.09z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M445.34 171.02 a33.93 33.93 0 1 0 67.86 0 a33.93 33.93 0 1 0 -67.86 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M907.7 100.19L950.7 100.19L950.7 102.02L907.7 102.02z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M531.16 187.81L586.36 187.81L586.36 243.01L531.16 243.01z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1185.32 262.36a13.35 13.35 0 1 0-26.13-5.52z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M696.21 425.09L697.17 425.09L697.17 443.03L696.21 443.03z' stroke='%23e73635'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+h1{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 3px 4px 10px rgb(195, 192, 192);
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    margin: 25px 0;
+    box-shadow: 5px 6px 10px black;
+    border: none;
+    outline: none;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
