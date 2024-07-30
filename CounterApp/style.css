@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(239, 239, 239);
+}
+
+#app {
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+}
+
+#counter {
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+button:hover {
+    background-color: blue;
+    color: black;
+}
